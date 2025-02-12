@@ -1,32 +1,34 @@
 import { Playfair_Display } from "next/font/google";
+import { VT323 } from "@next/font/google";
 import Link from "next/link";
 
 const playfairDisplay = Playfair_Display({
   display: "swap",
   subsets: ["latin"],
 });
+const pixelFont = VT323({ subsets: ["latin"], weight: "400" });
 
 export default function TextFooter() {
   return (
     <>
       {/* Upper Text */}
           <h1
-            className={`absolute left-1/2 top-10 transform -translate-x-1/2 text-white text-5xl font-bold leading-tight text-center ${playfairDisplay.className}`}
+            className={`absolute left-1/2 top-10 transform -translate-x-1/2 text-white text-5xl font-bold leading-tight text-center ${pixelFont.className}`}
           >
-            <span className="text-red-500">Hi Madelyn, let&apos;s play a...</span> <br />Valentine&apos;s Day Matching Game!
+            <span className="text-white-500">Hi Madelyn!</span> <br />
           </h1>
       {/* Left Text */}
       <h1
-        className={`absolute left-10 bottom-5 transform -translate-y-1/2 text-white text-5xl font-bold leading-tight ${playfairDisplay.className}`}
+        className={`absolute left-10 bottom-5 transform -translate-y-1/2 text-white text-3xl font-bold leading-tight ${pixelFont.className}`}
       >
-        <span className="text-red-500">Before we add </span> <br />another night to remember...
+        <span className="text-red-500">Before we create another night to remember...</span> <br />Let&apos;s make sure we don&apos;t forget...
       </h1>
 
       {/* Right Text */}
       <h1
-        className={`absolute right-10 bottom-5 transform -translate-y-1/2 text-white text-5xl font-bold leading-tight text-right ${playfairDisplay.className}`}
+        className={`absolute right-10 bottom-5 transform -translate-y-1/2 text-white text-3xl font-bold leading-tight text-right ${pixelFont.className}`}
       >
-        let&apos;s make sure <br /> <span className="text-red-500">we don&apos;t forget...</span>
+        all the memories we've already made <br /> <span className="text-red-500">with a Valentine&apos;s Day Matching Game!</span>
       </h1>
 
       {/* Copyright */}
