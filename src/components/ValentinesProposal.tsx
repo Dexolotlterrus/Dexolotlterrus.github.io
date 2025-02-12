@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Playfair_Display } from "next/font/google";
+import { VT323 } from "@next/font/google";
 import { motion, AnimatePresence } from "framer-motion";
 import Fireworks from "@fireworks-js/react";
 import Image from "next/image";
@@ -9,6 +10,7 @@ const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
+const pixelFont = VT323({ subsets: ["latin"], weight: "400" });
 // 36 images
 const images = [
   "/game-photos/1.avif",
@@ -85,7 +87,7 @@ export default function ValentinesProposal() {
         {step === 0 && (
           <motion.h2
             key="step-0"
-            className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
+            className={`text-4xl font-semibold mb-4 ${pixelFont.className}`}
             transition={{ duration: 1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -97,7 +99,7 @@ export default function ValentinesProposal() {
         {step === 1 && (
           <motion.h2
             key="step-1"
-            className={`text-4xl font-semibold mb-4 ${playfairDisplay.className}`}
+            className={`text-4xl font-semibold mb-4 ${pixelFont.className}`}
             transition={{ duration: 3 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -130,7 +132,7 @@ export default function ValentinesProposal() {
             </div>
 
             <h2
-              className={`text-5xl font-semibold mb-8 ${playfairDisplay.className}`}
+              className={`text-5xl font-semibold mb-8 ${pixelFont.className}`}
             >
               ...as a cute pair at prom? :)
             </h2>
@@ -168,7 +170,7 @@ export default function ValentinesProposal() {
         {step === 3 && (
           <motion.div
             key="step-3"
-            className={`text-4xl font-semibold mb-4 flex flex-col justify-center items-center ${playfairDisplay.className}`}
+            className={`text-4xl font-semibold mb-4 flex flex-col justify-center items-center ${pixelFont.className}`}
             transition={{ duration: 1 }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
