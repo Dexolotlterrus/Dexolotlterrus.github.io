@@ -13,14 +13,14 @@ export default function TextFooter() {
       <h1
         className={`absolute left-10 bottom-5 transform -translate-y-1/2 text-white text-5xl font-bold leading-tight ${playfairDisplay.className}`}
       >
-        <span className="text-red-400">Before we add </span> <br />another night to remember...
+        <span className="text-red-500">Before we add </span> <br />another night to remember...
       </h1>
 
       {/* Right Text */}
       <h1
         className={`absolute right-10 bottom-5 transform -translate-y-1/2 text-white text-5xl font-bold leading-tight text-right ${playfairDisplay.className}`}
       >
-        let's make sure <br /> <span className="text-red-400">we don't forget...</span>
+        let's make sure <br /> <span className="text-red-500">we don't forget...</span>
       </h1>
 
       {/* Copyright */}

@@ -21,7 +21,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black relative px-10">
+    <div className="flex items-center justify-center min-h-screen bg-red-400 relative px-10">
       {!showValentinesProposal ? (
         <motion.div
           initial={{ opacity: 1 }}
