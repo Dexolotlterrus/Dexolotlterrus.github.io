@@ -91,7 +91,7 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            Happy Valentine&apos;s Day Cutie!
+            Congratulations! You win a prize!
           </motion.h2>
         )}
         {step === 1 && (
@@ -103,7 +103,7 @@ export default function ValentinesProposal() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
-            But wait, there&apos;s more...
+            But wait, let&apos;s make one final match...
           </motion.h2>
         )}
         {step === 2 && (
@@ -132,7 +132,7 @@ export default function ValentinesProposal() {
             <h2
               className={`text-5xl font-semibold mb-8 ${playfairDisplay.className}`}
             >
-              I think we&apos;d make a cute MATCHING PAIR at prom :)
+              ...as a cute pair at prom? :)
             </h2>
             <Image
               src="/sad_hamster.png"
