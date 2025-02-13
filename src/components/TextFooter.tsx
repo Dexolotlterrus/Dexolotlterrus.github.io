@@ -11,12 +11,6 @@ const pixelFont = VT323({ subsets: ["latin"], weight: "400" });
 export default function TextFooter() {
   return (
     <>
-      {/* Upper Text */}
-          <h1
-            className={`absolute left-1/2 top-10 transform -translate-x-1/2 text-white text-5xl font-bold leading-tight text-center ${pixelFont.className}`}
-          >
-            <span className="text-white-500">Hi Madelyn!</span> <br />
-          </h1>
       {/* Left Text */}
       <h1
         className={`absolute left-10 bottom-5 transform -translate-y-1/2 text-white text-3xl font-bold leading-tight ${pixelFont.className}`}

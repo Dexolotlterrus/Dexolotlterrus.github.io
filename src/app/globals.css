@@ -14,6 +14,25 @@
   }
 }
 
+@keyframes float-animation {
+  0% {
+    transform: translateY(0);
+    position: relative;
+  }
+  50% {
+    transform: translateY(-10px);
+    position: relative;
+  }
+  100% {
+    transform: translateY(0);
+    position: relative;
+  }
+}
+
+.float-animation {
+  animation: float-animation 3s ease-in-out infinite;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

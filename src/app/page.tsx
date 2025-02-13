@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
+import TextHeader from "@/components/TextHeader";
 import TextFooter from "@/components/TextFooter";
 import PhotoPairGame from "../components/PhotoPairGame";
 import ValentinesProposal from "@/components/ValentinesProposal";
@@ -28,6 +29,7 @@ export default function Home() {
           animate={{ opacity: isTransitioning ? 0 : 1 }}
           transition={{ duration: ANIM_DURATION }}
         >
+          <TextHeader />
           <PhotoPairGame handleShowProposal={handleShowProposal} />
           <TextFooter />
         </motion.div>
