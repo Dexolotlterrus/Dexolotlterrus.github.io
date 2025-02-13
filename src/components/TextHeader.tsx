@@ -6,7 +6,7 @@ const playfairDisplay = Playfair_Display({
   display: "swap",
   subsets: ["latin"],
 });
-const pixelFont = VT323({ subsets: ["latin"], weight: "400" });
+const pixelFont = VT323({ display: "swap", subsets: ["latin"], weight: "400" });
 
 export default function TextHeader() {
   return (

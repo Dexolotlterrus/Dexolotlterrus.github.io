@@ -10,7 +10,7 @@ const playfairDisplay = Playfair_Display({
   subsets: ["latin"],
 });
 
-const pixelFont = VT323({ subsets: ["latin"], weight: "400" });
+const pixelFont = VT323({ display: "swap", subsets: ["latin"], weight: "400" });
 // 36 images
 const images = [
   "/game-photos/1.avif",
